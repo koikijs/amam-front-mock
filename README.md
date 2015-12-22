@@ -1,0 +1,1 @@
+amam-front mock

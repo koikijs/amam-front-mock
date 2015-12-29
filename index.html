@@ -199,10 +199,24 @@
 
 <section id="entry-modal" class="modal">
   <div class="modal-inner">
-    ここに表示するコンテンツを記述します。
+	<h2>Attendance Information</h2>
+	<form class="entry-form" method="post" action="#">
+		<input type="text" name="name" placeholder="please input target name">
+		<input type="text" name="stat" placeholder="please input stat">
+		<!-- <p>please choose status</p> -->
+		<!-- <div class="stat-icon-list"></div> -->
+		<!-- <div class="date">date</div> -->
+		<input type="text" name="start" placeholder="please input start-date">
+		<input type="text" name="end" placeholder="please input end-date">
+		<!-- <div class="time">time</div> -->
+		<input type="text" name="time" placeholder="please input time">
+		<textarea name="reason" placeholder="please input reason"></textarea>
+		<input type="submit" value="SEND">
+	</form>
   </div>
   <a href="#" class="close"><span>close</span></a>
 </section>
+
 
 </body>
 </html>

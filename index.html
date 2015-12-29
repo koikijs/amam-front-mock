@@ -200,16 +200,52 @@
 <section id="entry-modal" class="modal">
   <div class="modal-inner">
 	<h2>Attendance Information</h2>
-	<form class="entry-form" method="post" action="#">
+	<form class="entry-form" method="get" action="#">
 		<input type="text" name="name" placeholder="please input target name">
-		<input type="text" name="stat" placeholder="please input stat">
-		<!-- <p>please choose status</p> -->
-		<!-- <div class="stat-icon-list"></div> -->
-		<!-- <div class="date">date</div> -->
-		<input type="text" name="start" placeholder="please input start-date">
-		<input type="text" name="end" placeholder="please input end-date">
-		<!-- <div class="time">time</div> -->
-		<input type="text" name="time" placeholder="please input time">
+		<p>please choose status</p>
+		<div class="stat-icon-list">
+			<input type="radio" name="icon" id="select1" value="1" checked="">
+			<label for="select1">
+				<img class="stat-icon" src="images/icons/icon-train-delay.png" alt="train-delay">
+			</label>
+			<input type="radio" name="icon" id="select2" value="2" checked="">
+			<label for="select2">
+				<img class="stat-icon" src="images/icons/icon-train-delay.png" alt="train-delay">
+			</label>
+			<input type="radio" name="icon" id="select3" value="3" checked="">
+			<label for="select3">
+				<img class="stat-icon" src="images/icons/icon-train-delay.png" alt="train-delay">
+			</label>
+			<input type="radio" name="icon" id="select4" value="4" checked="">
+			<label for="select4">
+				<img class="stat-icon" src="images/icons/icon-train-delay.png" alt="train-delay">
+			</label>
+			<input type="radio" name="icon" id="select5" value="5" checked="">
+			<label for="select5">
+				<img class="stat-icon" src="images/icons/icon-train-delay.png" alt="train-delay">
+			</label>
+			<input type="radio" name="icon" id="select6" value="6" checked="">
+			<label for="select6">
+				<img class="stat-icon" src="images/icons/icon-train-delay.png" alt="train-delay">
+			</label>
+			<input type="radio" name="icon" id="select7" value="7" checked="">
+			<label for="select7">
+				<img class="stat-icon" src="images/icons/icon-train-delay.png" alt="train-delay">
+			</label>
+			<input type="radio" name="icon" id="select8" value="8" checked="">
+			<label for="select8">
+				<img class="stat-icon" src="images/icons/icon-train-delay.png" alt="train-delay">
+			</label>
+		</div>
+		<div class="date">
+		date<input type="date" name="date" autocomplete="on" required>
+		</div>
+		<div class="time">
+		time(start)<input type="time" name="start" autocomplete="on" required>
+		</div>
+		<div class="time">
+		time(end)<input type="time" name="end" autocomplete="on" required>
+		</div>
 		<textarea name="reason" placeholder="please input reason"></textarea>
 		<input type="submit" value="SEND">
 	</form>

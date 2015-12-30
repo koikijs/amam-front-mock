@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="Author" content="takahiro fujii">
 	<title>attendance mamnagement system</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="shortcut icon" href="favicon.ico" type="./favicon.ico"/>
 </head>
@@ -238,15 +239,17 @@
 			</label>
 		</div>
 		<div class="date">
-		date<input type="date" name="date" autocomplete="on" required>
+			DATE
+			<input type="date" name="date" autocomplete="on" required>
 		</div>
 		<div class="time">
-		time(start)<input type="time" name="start" autocomplete="on" required>
+			TIME
+			<input type="time" name="start" autocomplete="on" value="09:00"required>
+			<span class="seperator">-</span>
+			<input type="time" name="end" autocomplete="on" required>
 		</div>
-		<div class="time">
-		time(end)<input type="time" name="end" autocomplete="on" required>
-		</div>
-		<textarea name="reason" placeholder="please input reason"></textarea>
+
+		REASON<textarea name="reason" placeholder="please input reason"></textarea>
 		<input type="submit" value="SEND">
 	</form>
   </div>

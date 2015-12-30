@@ -344,7 +344,7 @@ hr.fancy-line {
 .entry-form textarea {
   display: block;
   width: 100%;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 
 .entry-form .stat-icon-list {
@@ -370,4 +370,86 @@ hr.fancy-line {
 
 .entry-form input[type=radio]:checked + label .stat-icon {
   background-color: #a1b91d;
+}
+
+.entry-form input[type=date]{
+  width: 32%;
+  height: 50px;
+  text-align: center;
+  font-size: 3.0rem;
+  margin: 10px;
+}
+
+.entry-form input[type=time]{
+  width: 14%;
+  height: 50px;
+  text-align: center;
+  font-size: 3.0rem;
+  margin: 10px;
+}
+
+/*input[type=date] {
+  background: #ccc;
+  background: linear-gradient(90deg, #ddd, #ccc);
+  border: 3px solid #eee;
+  border-radius: 20px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+  color: #222;
+  font: 16px Helvetica,Arial,sans-serif;
+  left: 50%;
+  line-height: 20px;
+  margin: -15px 0 0 -100px;
+  outline: 0;
+  padding: 5px 10px;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+}
+*/
+/* スピンボタン（上下ボタン）を非表示 */
+input[type=date]::-webkit-inner-spin-button,
+input[type=time]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* 無入力時の 年/月/日 を / / にする */
+input[type=date]::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+input[type=date]::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+input[type=date]::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+  color: transparent;
+}
+
+/* /の色を変える */
+input[type=date]::-webkit-datetime-edit-text,
+input[type=time]::-webkit-datetime-edit-text {
+  color: #666;
+}
+
+/* remove clear button */
+input[type=date]::-webkit-clear-button {
+  -webkit-appearance: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  position: relative;
+  opacity: 1; /* display calender icon always*/
+}
+
+/* change indicator icon */
+input[type=date]::-webkit-calendar-picker-indicator:before {
+  color: #666;
+  font-family: FontAwesome;
+  content: "\f133";
+  position: absolute;
+  left: 0px;
+  top: -4px;
+}
+
+/* remove clear button */
+input[type=time]::-webkit-clear-button {
+  -webkit-appearance: none;
+}
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  background: none;
 }

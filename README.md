@@ -5,3 +5,4 @@ TODO
 * search box
 * consider modal window
 * consider calendar ui
+* create icon

@@ -269,7 +269,7 @@ hr.fancy-line {
 /* Modal content */
 .modal-inner {
   position: relative;
-  margin: 60px 15% 15%;
+  margin: 80px 15% 15%;
   padding: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -279,6 +279,16 @@ hr.fancy-line {
   border-radius: 15px;
   background-color: rgba(0, 0, 0, .7);
   z-index: 10;
+}
+
+.modal .circle {
+  position: absolute;
+  background-color: rgba(255, 0, 0, .7);
+  height: 50px;
+  width: 100px;
+  top: -20px;
+  left: -10px;
+  border-radius:100px 100px 0 0;
 }
 
 .modal h2 {

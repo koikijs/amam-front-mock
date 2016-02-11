@@ -16,6 +16,11 @@ body {
   font-family: 'Source Code Pro', "Hiragino Kaku Gothic ProN", Meiryo, san-serif;
 }
 
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
 .logo {
   margin: 20px;
 }
@@ -80,8 +85,8 @@ hr.fancy-line {
   position: absolute;
   top: 10%;
   left: 32%;
-  font-size: 1.6rem;
-white-space: nowrap;
+  font-size: 1.8rem;
+  white-space: nowrap;
 }
 
 .item .department {
@@ -249,7 +254,6 @@ white-space: nowrap;
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  text-shadow: 0 1px 0 #333;
   color: #fff;
   text-align: center;
   font-size: 2.0rem;
@@ -345,12 +349,40 @@ white-space: nowrap;
  * Entry form
  * *************** */
 .entry-form input[type=text],
+.entry-form input[type=date],
+.entry-form input[type=time],
 .entry-form textarea {
-  display: block;
-  width: 100%;
   font-size: 2.8rem;
-  border-radius: 4px;
-  color: #000000;
+  color: #fff;
+}
+
+.entry-form input[type=text],
+.entry-form input[type=date],
+.entry-form input[type=time]
+{  
+  border: none;
+  border-bottom: 1px solid #fff; 
+  width: 50%;
+  margin: 10px;
+  font-size: 2.5rem;
+  padding-left: 10px;
+  background-color: inherit;
+}
+
+.entry-form input[type=text]:focus,
+.entry-form input[type=date]:focus,
+.entry-form input[type=time]:focus
+{  
+  outline: none;
+}
+
+.entry-form input[type=date]{
+  width: 32%;
+}
+
+.entry-form input[type=time]{
+  width: 10%;
+  margin: 10px;
 }
 
 .entry-form .stat-icon-list {
@@ -365,8 +397,14 @@ white-space: nowrap;
 .entry-form .stat-icon-list .stat-icon {
   width: 10%;
   border-radius: 50%;
-  border: 3px #a1b91d solid;
+  border: 3px #c1c1c1 solid;
   background-color: #fff;
+  transition: .4s;
+}
+
+.entry-form .stat-icon-list .stat-icon:hover {
+  border: 3px #c1c1c1 solid;
+  background-color: #c1c1c1;
   transition: .4s;
 }
 
@@ -378,40 +416,6 @@ white-space: nowrap;
   background-color: #a1b91d;
 }
 
-.entry-form input[type=date]{
-  width: 32%;
-  height: 50px;
-  text-align: center;
-  font-size: 3.0rem;
-  margin: 10px;
-}
-
-.entry-form input[type=time]{
-  width: 14%;
-  height: 50px;
-  text-align: center;
-  font-size: 3.0rem;
-  margin: 10px;
-}
-
-/*input[type=date] {
-  background: #ccc;
-  background: linear-gradient(90deg, #ddd, #ccc);
-  border: 3px solid #eee;
-  border-radius: 20px;
-  box-shadow: 0 3px 3px rgba(0,0,0,0.1);
-  color: #222;
-  font: 16px Helvetica,Arial,sans-serif;
-  left: 50%;
-  line-height: 20px;
-  margin: -15px 0 0 -100px;
-  outline: 0;
-  padding: 5px 10px;
-  position: absolute;
-  top: 50%;
-  width: 200px;
-}
-*/
 /* スピンボタン（上下ボタン）を非表示 */
 input[type=date]::-webkit-inner-spin-button,
 input[type=time]::-webkit-inner-spin-button {
@@ -428,7 +432,7 @@ input[type=date]::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
 /* change color of "/ */
 input[type=date]::-webkit-datetime-edit-text,
 input[type=time]::-webkit-datetime-edit-text {
-  color: #666;
+  color: #fff;
 }
 
 /* remove clear button */
@@ -444,12 +448,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 /* change indicator icon */
 input[type=date]::-webkit-calendar-picker-indicator:before {
-  color: #666;
+  color: #fff;
   font-family: FontAwesome;
   content: "\f133";
   position: absolute;
-  left: 0px;
-  top: -4px;
+  left: -10px;
+  top: -0.5px;
 }
 
 /* remove clear button */
@@ -475,5 +479,8 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   }
   #search-area {
     display: block;    
+  }
+  .item .name {
+    font-size: 2.0rem;
   }
 }

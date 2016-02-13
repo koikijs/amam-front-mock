@@ -239,7 +239,7 @@ hr.fancy-line {
 /* ****************
  * Modal window
  * *************** */
-#entry-modal:target {
+.modal.active {
   opacity: 1;
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -266,7 +266,7 @@ hr.fancy-line {
 /* Modal content */
 .modal-inner {
   position: relative;
-  margin: 80px 15% 15%;
+  margin: 80px 5% 5%;
   padding: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html {
-  background-color: #ABD6A5;
+  background-color: #E4E4E5;
   width: 100%;
   font-size: 62.5%; /* 16px * 0.625 = 10px */
 }
@@ -145,7 +145,7 @@ hr.fancy-line {
   margin: 5%;
   padding: 5px;
   color: #FFFFFF;
-  background-color: #5CB531;
+  background-color: #006BB9;
   font-size: 1.6rem;
 }
 
@@ -155,7 +155,7 @@ hr.fancy-line {
   bottom: -10px;
   left: 50%;
   margin-left: -10px;
-  border-top: 10px solid #5CB531;
+  border-top: 10px solid #006BB9;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
@@ -217,7 +217,7 @@ hr.fancy-line {
   border: 1px solid #B9C9CE;
   padding: 12px;
   color: #FFFFFF;
-  background-color: #5CB531;
+  background-color: #006BB9;
   border-radius: 5px;
 }
 
@@ -413,7 +413,7 @@ hr.fancy-line {
 }
 
 .entry-form input[type=radio]:checked + label .stat-icon {
-  background-color: #a1b91d;
+  background-color: #006BB9;
 }
 
 /* スピンボタン（上下ボタン）を非表示 */

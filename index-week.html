@@ -343,7 +343,6 @@
 		</div>
 
 	</div><!-- /.gridmaster -->
-
 	<section id="entry-modal" class="modal">
 		<div class="modal-inner">
 			<h2>Attendance Information</h2>
@@ -371,32 +370,39 @@
 						<img class="stat-icon" src="images/icons/icon-business-trip.png" alt="train-delay">
 					</label>
 					<input type="radio" name="icon" id="select6" value="6" checked="">
-					<label for="select6">
-						<img class="stat-icon" src="images/icons/icon-train-delay.png" alt="train-delay">
-					</label>
 				</div>
-				<div class="input-name">
-					NAME
-					<input type="text" name="name" placeholder="please input target name">		
-				</div>	<!-- /.input-name -->				
-				<div class="date">
-					DATE
-					<input type="date" name="date" autocomplete="on" required>
-				</div>	<!-- /.date -->
-				<div class="time">
-					TIME
-					<input type="time" name="start" autocomplete="on" value="09:00"required>
-					<span class="seperator">-</span>
-					<input type="time" name="end" autocomplete="on" required>
-				</div>	<!-- /.time -->
-				<div class="reason">
-					REASON
-					<input type="text" name="reason" placeholder="please input reason">
-				</div>
+				<table class="table-form">
+					<tr>
+					<div class="input-name">
+						<th>NAME</th>
+						<td><input type="text" name="name" placeholder="please input target name"></td>
+					</div>	<!-- /.input-name -->
+					</tr>
+					<tr>
+					<div class="date">
+						<th>DATE</th>
+						<td><input type="date" name="date" autocomplete="on" required></td>
+					</div>	<!-- /.date -->
+					</tr>
+					<tr>
+					<div class="time">
+						<th>TIME</th>
+						<td><input type="time" name="start" autocomplete="on" value="09:00"required>
+						<span class="seperator">-</span>
+						<input type="time" name="end" autocomplete="on" required>
+						</td>
+					</div>	<!-- /.time -->
+					</tr>
+					<tr>
+					<div class="reason">
+						<th>REASON</th>
+						<td><input type="text" name="reason" placeholder="please input reason"></td>
+					</div>
+					</tr>
+				</table>
 				<div class="submitbutton">
 					<input type="submit" value="SEND">
-				</div>
-				<!-- /.submitbutton -->
+				</div><!-- /.submitbutton -->
 			</form>
 		</div>
 		<a href="#" class="close">

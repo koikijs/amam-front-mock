@@ -366,14 +366,22 @@ body {
  .entry-form input[type=text],
  .entry-form input[type=date],
  .entry-form input[type=time],
- .entry-form textarea {
+ .entry-form textarea,
+ .entry-form-ac input[type=text],
+ .entry-form-ac input[type=date],
+ .entry-form-ac input[type=time],
+ .entry-form-ac textarea
+{
   font-size: 2.8rem;
   color: #fff;
 }
 
 .entry-form input[type=text],
 .entry-form input[type=date],
-.entry-form input[type=time]
+.entry-form input[type=time],
+.entry-form-ac input[type=text],
+.entry-form-ac input[type=date],
+.entry-form-ac input[type=time]
 {  
   border: none;
   border-bottom: 1px solid #fff; 
@@ -386,7 +394,10 @@ body {
 
 .entry-form input[type=text]:focus,
 .entry-form input[type=date]:focus,
-.entry-form input[type=time]:focus
+.entry-form input[type=time]:focus,
+.entry-form-ac input[type=text]:focus,
+.entry-form-ac input[type=date]:focus,
+.entry-form-ac input[type=time]:focus
 {  
   outline: none;
 }
@@ -448,7 +459,7 @@ input[type=date]::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
 /* change color of "/ */
 input[type=date]::-webkit-datetime-edit-text,
 input[type=time]::-webkit-datetime-edit-text {
-  color: #fff;
+  color: #696969;
 }
 
 /* remove clear button */
@@ -464,7 +475,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 /* change indicator icon */
 input[type=date]::-webkit-calendar-picker-indicator:before {
-  color: #fff;
+  color: #696969;
   font-family: FontAwesome;
   content: "\f133";
   position: absolute;
@@ -664,11 +675,12 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   .entry-form-ac input[type=date],
   .entry-form-ac input[type=time]
   {  
-    width: 95%;
+    width: 100%;
     border: 1px solid #fff;
     margin: 0px;
     margin-top: 10px;
     font-size: 3.0rem;
+    color: #696969;
     background-color: #fff;
     text-align: center;
   }

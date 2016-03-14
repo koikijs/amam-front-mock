@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('input-date').value = date.yyyymmdd();;
 });
 
+//FastClick load
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
+
 (function () {
  Date.prototype.yyyymmdd = function() {
    var yyyy = this.getFullYear().toString();

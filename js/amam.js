@@ -3,10 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
       date = new Date();
   toggleFunc = function() {
     document.getElementById('entry-modal').classList.toggle('active');
+    document.getElementById('wrapper').style.position = (document.getElementById('wrapper').style.position == '') ? 'fixed' : '';
+    document.getElementById('wrapper').style.width = (document.getElementById('wrapper').style.width == '') ? '100%' : '';
   };
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click',toggleFunc, false);
   };
+  // Set default date.
   document.getElementById('input-date').value = date.yyyymmdd();;
 });
 

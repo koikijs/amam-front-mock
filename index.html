@@ -32,63 +32,63 @@
 				<p class="title">Paid leave off</p>
 				<hr class="fancy-line"></hr>
 				<section class="item">
-					<a href="#">
+					<a href="?name=TakahiroFujii&status=3&date=2016-06-07&from=09:00&to=10:15&mode=edit" class="edit-info">
 						<img class="thumbnail" src="images/thumbnail1.png" alt="thumbnail">
 						<div class="name">Takahiro Fujii</div>
 						<p class="department">Development Group</p>
 					</a>
 				</section>
 				<section class="item">
-					<a href="#">
+					<a href="?name=TakahiroFujii&status=3&date=2016-06-07&from=09:00&to=10:15&mode=edit" class="edit-info">
 						<img class="thumbnail" src="images/thumbnail1.png" alt="thumbnail">
 						<div class="name">Takahiro Fujii</div>
 						<p class="department">Development Group</p>
 					</a>
 				</section>
 				<section class="item">
-					<a href="#">
+					<a href="?name=TakahiroFujii&status=3&date=2016-06-07&from=09:00&to=10:15&mode=edit" class="edit-info">
 						<img class="thumbnail" src="images/thumbnail1.png" alt="thumbnail">
 						<div class="name">Takahiro Fujii</div>
 						<p class="department">Development Group</p>
 					</a>
 				</section>
 				<section class="item">
-					<a href="#">
+					<a href="?name=TakahiroFujii&status=3&date=2016-06-07&from=09:00&to=10:15&mode=edit" class="edit-info">
 						<img class="thumbnail" src="images/thumbnail1.png" alt="thumbnail">
 						<div class="name">Takahiro Fujii</div>
 						<p class="department">Development Group</p>
 					</a>
 				</section>
 				<section class="item">
-					<a href="#">
+					<a href="?name=TakahiroFujii&status=3&date=2016-06-07&from=09:00&to=10:15&mode=edit" class="edit-info">
 						<img class="thumbnail" src="images/thumbnail1.png" alt="thumbnail">
 						<div class="name">Takahiro Fujii</div>
 						<p class="department">Development Group</p>
 					</a>
 				</section>
 				<section class="item">
-					<a href="#">
+					<a href="?name=TakahiroFujii&status=3&date=2016-06-07&from=09:00&to=10:15&mode=edit" class="edit-info">
 						<img class="thumbnail" src="images/thumbnail1.png" alt="thumbnail">
 						<div class="name">Takahiro Fujii</div>
 						<p class="department">Development Group</p>
 					</a>
 				</section>
 				<section class="item">
-					<a href="#">
+					<a href="?name=TakahiroFujii&status=3&date=2016-06-07&from=09:00&to=10:15&mode=edit" class="edit-info">
 						<img class="thumbnail" src="images/thumbnail1.png" alt="thumbnail">
 						<div class="name">Takahiro Fujii</div>
 						<p class="department">Development Group</p>
 					</a>
 				</section>
 				<section class="item">
-					<a href="#">
+					<a href="?name=TakahiroFujii&status=3&date=2016-06-07&from=09:00&to=10:15&mode=edit" class="edit-info">
 						<img class="thumbnail" src="images/thumbnail1.png" alt="thumbnail">
 						<div class="name">Takahiro Fujii</div>
 						<p class="department">Development Group</p>
 					</a>
 				</section>
 				<section class="item">
-					<a href="#">
+					<a href="?name=TakahiroFujii&status=3&date=2016-06-07&from=09:00&to=10:15&mode=edit" class="edit-info">
 						<img class="thumbnail" src="images/thumbnail1.png" alt="thumbnail">
 						<div class="name">Takahiro Fujii</div>
 						<p class="department">Development Group</p>
@@ -235,7 +235,7 @@
 					<tr>
 					<div class="input-name">
 						<th>NAME</th>
-						<td><input type="text" name="name" placeholder="target name"></td>
+						<td><input type="text" id="input-name" name="name" placeholder="target name"></td>
 					</div>	<!-- /.input-name -->
 					</tr>
 					<tr>
@@ -247,11 +247,11 @@
 					<tr>
 					<div class="time">
 						<th>TIME</th>
-						<td><input type="time" name="start" autocomplete="on" value="09:00" required>
+						<td><input id="input-time-from" type="time" name="start" autocomplete="on" value="09:00" required>
 						<span class="seperator">-</span>
-						<input type="time" name="end" autocomplete="on" value="09:15" required>
+						<input id="input-time-to" type="time" name="end" autocomplete="on" value="09:15" required>
 						</td>
-					</div>	<!-- /.time -->
+					</div><!-- /.time -->
 					</tr>
 					<tr>
 					<div class="reason">
@@ -261,7 +261,7 @@
 					</tr>
 				</table>
 				<div class="submitbutton">
-					<input type="submit" value="SEND">
+					<input id="input-send" type="submit" value="SEND">
 				</div><!-- /.submitbutton -->
 			</form>
 		</div>

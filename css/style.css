@@ -579,7 +579,6 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
 @media (max-width: 768px) {
   .gridmaster {
     display: block;
-    border-radius: 0px;
   }
   .grid {
     display: block;
@@ -596,6 +595,7 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   }
   .item.new:after {
     display: block;
+    border-radius: 0px;
   }
   .item .name {
     font-size: 2.0rem;

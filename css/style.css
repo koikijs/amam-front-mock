@@ -266,7 +266,7 @@ body {
 /* Modal content */
 .modal-inner {
   position: relative;
-  margin: 80px 5% 5%;
+  margin: 40px 5% 2%;
   padding: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -303,7 +303,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 200%;
+  height: 104%;
   background-color: rgba(0, 0, 0, .20);
   z-index: 1;
 }
@@ -502,6 +502,57 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   background: #006BB9;
 }
 
+#triangle{
+
+}
+
+#triangle{
+  position:absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  border: 20px solid transparent;
+  border-bottom: 20px solid rgba(0, 0, 0, .7);
+  margin-left:-20px;
+}
+
+#entry-toggle-late.active:before,
+#entry-toggle-paid.active:before,
+#entry-toggle-business.active:before {
+  display: inline-block;
+  position:absolute;
+  width:0;
+  height:0;
+  content:"";
+  border:20px solid transparent;
+  border-bottom-color:rgba(0, 0, 0, .7);
+  left: 50%;
+  margin-left:-20px;
+  bottom: 100%;
+}
+
+#entry-toggle-late:before,
+#entry-toggle-paid:before,
+#entry-toggle-business:before {
+}
+
+#entry-toggle-late,
+#entry-toggle-paid,
+#entry-toggle-business {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .7);
+  transition: height 0.7s ease-in-out;
+  margin: 20px 0%;
+}
+
+#entry-toggle-late.active,
+#entry-toggle-paid.active,
+#entry-toggle-business.active {
+  height: 540px;
+}
+
 /* css for smartphone */
 @media (max-width: 768px) {
   .gridmaster {
@@ -510,6 +561,8 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   .grid {
     display: block;
     margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .filter-conditon {
     display: inline-block;
@@ -567,5 +620,17 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
     width: 100%;
     padding: 5% 5%;
     margin-top: 20px;
+  }
+  .entry-form-ac input[type=text],
+  .entry-form-ac input[type=date],
+  .entry-form-ac input[type=time]
+  {  
+    width: 95%;
+    border: 1px solid #fff;
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 3.0rem;
+    background-color: #fff;
+    text-align: center;
   }
 }

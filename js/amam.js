@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   var btns = document.getElementsByClassName('btn'),
-      date = new Date(),
-      wrapperPosition = document.getElementById('wrapper').style.position;
+      date = new Date();
   toggleFunc = function() {
     document.getElementById('entry-modal').classList.toggle('active');
     document.getElementById('wrapper').style.position = (document.getElementById('wrapper').style.position == '') ? 'fixed' : '';

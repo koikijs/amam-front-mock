@@ -69,9 +69,24 @@ body {
 /* ****************
  * Item
  * *************** */
- .item {
+.item {
   position: relative;
   height: 50px;
+}
+
+.item.new {
+  background: #FEDFE1;
+}
+
+.item.new:after {
+  position: absolute;
+  top: 25%;
+  right: 20px;
+  content: "NEW";
+  background: #C11920;
+  color: #fff;
+  padding: 5px 10px 3px;
+  border-radius: 3px;
 }
 
 .item .thumbnail {
@@ -553,6 +568,13 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   height: 540px;
 }
 
+/* css for tablet */
+@media (max-width: 1200px) {
+  .item.new:after {
+    display: none;
+  }
+}
+
 /* css for smartphone */
 @media (max-width: 768px) {
   .gridmaster {
@@ -570,6 +592,10 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   }
   #search-area {
     display: block;    
+  }
+  .item.new:after {
+    display: block;
+    border-radius: 0px;
   }
   .item .name {
     font-size: 2.0rem;

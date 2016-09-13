@@ -97,17 +97,28 @@ body {
 }
 
 .item .name {
-  position: absolute;
+  position: relative;
   top: 10%;
   left: 32%;
   font-size: 1.8rem;
   white-space: nowrap;
 }
 
-.item .department {
-  position: absolute;
+.item .name p {
+  /*position: absolute;*/
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 1.4rem;
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+  width: 140px;
+  text-decoration: none;
+}
+
+.item .name .department{
+  /*position: absolute;*/
   top: 20px;
-  left: 32%;
   font-size: 0.9rem;
   color: #9FA0A0;
 }
@@ -120,6 +131,7 @@ body {
   border-radius: 5px;
   color: #777;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 .item > a:hover {
@@ -224,7 +236,7 @@ body {
 }
 
 #search-box {
-  display: table-cell;  
+  display: table-cell;
 }
 
 .filter-conditon {
@@ -374,9 +386,9 @@ body {
 .entry-form input[type=text],
 .entry-form input[type=date],
 .entry-form input[type=time]
-{  
+{
   border: none;
-  border-bottom: 1px solid #fff; 
+  border-bottom: 1px solid #fff;
   width: 60%;
   margin: 10px;
   font-size: 2.5rem;
@@ -387,7 +399,7 @@ body {
 .entry-form input[type=text]:focus,
 .entry-form input[type=date]:focus,
 .entry-form input[type=time]:focus
-{  
+{
   outline: none;
 }
 
@@ -591,7 +603,7 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
     margin-top: 20px;
   }
   #search-area {
-    display: block;    
+    display: block;
   }
   .item.new:after {
     display: block;
@@ -600,13 +612,16 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   .item .name {
     font-size: 2.0rem;
   }
+  .item .name p {
+    width: 340px;
+  }
   .modal-inner {
     margin: 80px 1% 1%;
   }
   .entry-form input[type=text],
   .entry-form input[type=date],
   .entry-form input[type=time]
-  {  
+  {
     width: 100%;
     border: 1px solid #fff;
     margin: 0px;
@@ -650,7 +665,7 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   .entry-form-ac input[type=text],
   .entry-form-ac input[type=date],
   .entry-form-ac input[type=time]
-  {  
+  {
     width: 95%;
     border: 1px solid #fff;
     margin: 0px;

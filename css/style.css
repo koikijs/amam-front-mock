@@ -89,7 +89,14 @@ body {
   border-radius: 3px;
 }
 
-.item .thumbnail {
+/*.item .thumbnail {
+  position: absolute;
+  top:10%;
+  left:5%;
+  height: 80%;
+}*/
+
+.item .waterMark {
   position: absolute;
   top:10%;
   left:5%;

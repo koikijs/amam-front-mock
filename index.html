@@ -345,10 +345,28 @@
 				</div>
 				<table class="table-form">
 					<tr>
-					<div class="input-name">
-						<th>NAME</th>
-						<td><input type="text" id="input-name" name="name" placeholder="target name"></td>
-					</div>	<!-- /.input-name -->
+						<div class="input-name">
+							<th>NAME</th>
+							<td>
+								<input type="text" id="input-name" name="name" placeholder="target name" autocomplete="on" list="member">
+								<datalist id="member">
+								<option value="takahiro.fujii">
+								<option value="takaaki.iida">
+								<option value="takashi.yokomichi">
+								<option value="takeshi.shinoda">
+								</datalist>
+							</td>
+						</div>	<!-- /.input-name -->
+					</tr>
+					<tr>
+						<th></th>
+						<td>
+							<ul class="target-name-list">
+								<li class="target-name">takahiro.fujii</li>
+								<li class="target-name">takaaki.iida</li>
+								<li class="target-name">takashi.yokomichi</li>
+							</ul>
+						</td>
 					</tr>
 					<tr>
 					<div class="date">

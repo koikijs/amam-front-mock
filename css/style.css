@@ -567,6 +567,17 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   text-align: left;
 }
 
+.table-form ul {
+  list-style: none;
+  padding: 0px;
+}
+.table-form ul li{
+  background: #006BB9;
+  margin: 5px;
+  padding: 5px;
+  max-width: 65%;
+  color: #fff;
+}
 .entry-form input[type=submit] {
   width: 50%;
   background-color: #fff;
@@ -708,6 +719,9 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
     width: 100%;
     display: block;
     text-align: center;
+  }
+  .table-form ul li{
+    max-width: 100%;
   }
   .entry-form input[type=submit] {
     width: 100%;

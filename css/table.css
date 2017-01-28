@@ -46,8 +46,9 @@ table .waterMark {
 
 table .save,
 table .trash {
-  width: 30px;
-  height: 30px;
+  width: 14px;
+  height: 14px;
+  fill: #ecf0f1;
 }
 
 table.striped > tbody > tr:nth-child(odd) {
@@ -55,4 +56,32 @@ table.striped > tbody > tr:nth-child(odd) {
 }
 
 table .person {
+}
+
+table .button {
+  position: relative;
+  margin: 5px;
+  padding: 5px;
+  border-width: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  color: #ecf0f1;
+  transition: opacity .3s;
+}
+
+table .button.button-save {
+  background-color: #006BB9;
+}
+
+table .button.button-delete {
+  background-color: #da314b;
+}
+
+table .button:hover {
+  opacity:0.8;
+}
+
+table .button span {
+  display: block;
+  padding: 2px 10px;
 }

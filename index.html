@@ -273,51 +273,74 @@
 		<div class="modal-inner">
 			<h2>Attendance Information</h2>
 			<form class="entry-form" method="get" action="#">
-				<p>please choose status</p>
+				<p>please choose type</p>
 				<div class="stat-icon-list">
 					<input type="radio" name="icon" id="select1" value="1" checked="">
 					<label for="select1">
-						<img class="stat-icon" src="images/icons/icon-morning-off.png" alt="morning-off">
+						<div class="stat-select-button">Late</div>
 					</label>
 					<input type="radio" name="icon" id="select2" value="2" checked="">
 					<label for="select2">
-						<img class="stat-icon" src="images/icons/icon-afternoon-off.png" alt="afternoon-off">
+						<div class="stat-select-button">Paid leave</div>
 					</label>
 					<input type="radio" name="icon" id="select3" value="3" checked="">
 					<label for="select3">
-						<img class="stat-icon" src="images/icons/icon-paid-leave.png" alt="paid-leave">
+						<div class="stat-select-button">Early leave</div>
 					</label>
 					<input type="radio" name="icon" id="select4" value="4" checked="">
 					<label for="select4">
-						<img class="stat-icon" src="images/icons/icon-late.png" alt="late">
+						<div class="stat-select-button">Morning half day off</div>
 					</label>
 					<input type="radio" name="icon" id="select5" value="5" checked="">
 					<label for="select5">
-						<img class="stat-icon" src="images/icons/icon-business-trip.png" alt="business-trip">
+						<div class="stat-select-button">Afternoon half day off</div>
 					</label>
 					<input type="radio" name="icon" id="select6" value="6" checked="">
 					<label for="select6">
-						<img class="stat-icon" src="images/icons/icon-business-trip.png" alt="leave-early">
+						<div class="stat-select-button">Substitute holiday</div>
 					</label>
 					<input type="radio" name="icon" id="select7" value="7" checked="">
 					<label for="select7">
-						<img class="stat-icon" src="images/icons/icon-business-trip.png" alt="substitute-holiday">
+						<div class="stat-select-button">Substitute work</div>
 					</label>
 					<input type="radio" name="icon" id="select8" value="8" checked="">
 					<label for="select8">
-						<img class="stat-icon" src="images/icons/icon-business-trip.png" alt="substitute-work">
+						<div class="stat-select-button">Outside</div>
 					</label>
 					<input type="radio" name="icon" id="select9" value="9" checked="">
 					<label for="select9">
-						<img class="stat-icon" src="images/icons/icon-business-trip.png" alt="out">
+						<div class="stat-select-button">Special holiday</div>
 					</label>
 					<input type="radio" name="icon" id="select10" value="10" checked="">
 					<label for="select10">
-						<img class="stat-icon" src="images/icons/icon-business-trip.png" alt="special-leave">
+						<div class="stat-select-button">Business trip</div>
 					</label>
 					<input type="radio" name="icon" id="select11" value="11" checked="">
 					<label for="select11">
-						<img class="stat-icon" src="images/icons/icon-business-trip.png" alt="others">
+						<div class="stat-select-button">Others</div>
+					</label>
+				</div>
+				<p>please choose reason</p>
+				<div class="stat-icon-list">
+					<input type="radio" name="reason" id="reason-select1" value="1" checked="">
+					<label for="reason-select1">
+						<div class="stat-select-button">Bad conditon</div>
+					</label>
+					<input type="radio" name="reason" id="reason-select2" value="2" checked="">
+					<label for="reason-select2">
+						<div class="stat-select-button">Train delay</div>
+					</label>
+					<input type="radio" name="reason" id="reason-select3" value="3" checked="">
+					<label for="reason-select3">
+						<div class="stat-select-button">Go to hospital</div>
+					</label>
+					<input type="radio" name="reason" id="reason-select4" value="4" checked="">
+					<label for="reason-select4">
+						<div class="stat-select-button">Family matter</div>
+					</label>
+					<input type="radio" name="reason" id="reason-select5" value="5" checked="">
+					<label for="reason-select5">
+						<div class="stat-select-button">Others</div>
 					</label>
 				</div>
 				<table class="table-form">
@@ -344,8 +367,8 @@
 					</tr>
 					<tr>
 					<div class="reason">
-						<th>REASON</th>
-						<td><input type="text" name="reason" placeholder="reason"></td>
+						<th>COMMENT</th>
+						<td><input type="text" name="comment" placeholder="comment"></td>
 					</div>
 					</tr>
 				</table>

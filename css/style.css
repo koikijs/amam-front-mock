@@ -459,20 +459,38 @@ body {
 }
 
 .entry-form .stat-icon-list {
-  display: box;
-  display: -webkit-box;
-  display: -moz-box;
-  box-pack: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content:         center;
 }
 
-.entry-form .stat-icon-list .stat-icon {
-  width: 10%;
-  border-radius: 50%;
-  border: 3px #c1c1c1 solid;
-  background-color: #fff;
+.entry-form label {
+    width: 20%;
+    margin: 2px;
+}
+
+.entry-form .stat-icon-list .stat-select-button {
+  font-size: 1.4rem;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  border: 2px #c1c1c1 solid;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
   transition: .4s;
+}
+
+.entry-form .stat-icon-list .stat-select-button:hover {
+  background-color: #c1c1c1;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.entry-form input[type=radio]:checked + label .stat-select-button {
+  background-color: #006BB9;
+  color: #fff;
 }
 
 .entry-form .stat-icon-list .stat-icon:hover {
@@ -483,10 +501,6 @@ body {
 
 .entry-form input[type=radio]{
   display: none;
-}
-
-.entry-form input[type=radio]:checked + label .stat-icon {
-  background-color: #006BB9;
 }
 
 /* スピンボタン（上下ボタン）を非表示 */
@@ -681,13 +695,6 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   .entry-form input[type=time]{
     width: 100%;
   }
-  .entry-form .stat-icon-list .stat-icon {
-    width: 17%;
-    border-radius: 50%;
-    border: 1px #c1c1c1 solid;
-    background-color: #fff;
-    transition: .1s;
-  }
   .entry-form .seperator {
     display: none;
   }
@@ -718,5 +725,9 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
     font-size: 3.0rem;
     background-color: #fff;
     text-align: center;
+  }
+  .entry-form label {
+      width: 100%;
+      margin: 2px;
   }
 }
